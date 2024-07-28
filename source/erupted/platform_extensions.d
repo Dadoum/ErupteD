@@ -1766,7 +1766,9 @@ mixin template Platform_Extensions( extensions... ) {
             }
         }
     }
-
+    
+  extern(D):
+    
     // workaround for not being able to mixin two overloads with the same symbol name
     alias loadDeviceLevelFunctionsExt = loadDeviceLevelFunctionsExtI;
     alias loadDeviceLevelFunctionsExt = loadDeviceLevelFunctionsExtD;
